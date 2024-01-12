@@ -266,14 +266,16 @@ img {
 }
 
 .home_img{
-  width: 200px;
+  width: 220px;
+  border-radius: 1.5rem;
+  justify-self: center;
 }
 
 /*TODO: container of image doesn't show styling*/
 .home_handle{
   justify-self: center;
   width: 190px;
-  height: 293px;
+  height: 300px;
   background: linear-gradient(180deg,
               hsla(var(--second-hue), var(--sat), var(--lig), 1)
               hsla(var(--first-hue), var(--sat), var(--lig), .2)
@@ -348,11 +350,12 @@ img {
 
 
 /*=============== BUTTONS ===============*/
+
 .button{
   display: inline-block;
   background-color: var(--first-color);
   color: var(--body-color);
-  padding: .75rem 1 rem;
+  padding: .3rem .75rem;
   border-radius: .5rem;
   font-weight: var(--font-medium);
   transition: .4s;
@@ -365,7 +368,8 @@ img {
 
 .button--ghost{
   background-color: transparent;
-  border: 2px solid var(--first-color);
+  border: 1.25px solid var(--first-color);
+  padding: .25rem .65rem;
   color: var(--first-color);
 }
 
@@ -381,6 +385,40 @@ img {
   border-radius: 1.5rem;
   justify-self: center;
 
+}
+
+.about_carousel{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-slide{
+  display: none;
+  height: 414px; 
+  justify-content: center;
+  margin: 10px;
+}
+
+.carousel_img{
+  /* width: 300px; */
+  border-radius: 1.5rem;
+  justify-self: center;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-button-container{
+  display: flex;
+  justify-content: center;
+}
+.carousel_button{
+  position: relative;
 }
 
 .about_data{
