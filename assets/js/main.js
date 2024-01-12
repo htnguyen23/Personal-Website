@@ -14,51 +14,29 @@ function scrollHeader(){
 
 
 /*=============== ABOUT IMAGES CAROUSEL ===============*/
-let currSlide = 0;
-let intervalID;
+let slideIndex = 1;
+showSlides(slideIndex);
 
-function showSlide(index) {
-    const slides = document.getElementsByClassName('carousel-slide');
-    // hide all slides
-    for (let i=0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-    }
-    // display the selected slide
-    slides[index].style.display = 'flex';
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function nextSlide() {
-    currSlide = (currSlide + 1) % document.getElementsByClassName('carousel-slide').length;
-    showSlide(currSlide);
-    resetInterval();
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
-function prevSlide() {
-    currSlide = (currSlide - 1 + document.getElementsByClassName('carousel-slide').length) % document.getElementsByClassName('carousel-slide').length;
-    showSlide(currSlide);
-    resetInterval();
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("carousel-slide");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
 }
-
-function startInterval() {
-    intervalID = setInterval(nextSlide, 5000); // Change 3000 to the desired interval in milliseconds (e.g., 3000 for 3 seconds)
-    console.log("startInterval()")
-}
-
-function resetInterval() {
-    clearInterval(intervalID);
-    startInterval()
-}
-
-// start the carousel automatically
-startInterval();
-// handle user interaction to reset the timer
-document.getElementById('carousel_left').addEventListener('click', function() {
-    prevSlide();
-});
-document.getElementById('carousel_right').addEventListener('click', function() {
-    nextSlide();
-});
-
 
 
 /*=============== SERVICES MODAL ===============*/
