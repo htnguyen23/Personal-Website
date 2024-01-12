@@ -43,6 +43,14 @@ modalClose.forEach((mc) => {
 
 
 /* Link active work */ 
+const linkProject = document.querySelectorAll('.project_item')
+
+function activeProject() {
+    linkProject.forEach(l => l.classList.remove('active-project'))
+    this.classList.add('active-project')
+}
+
+linkProject.forEach(l => l.addEventListener('click', activeProject))
 
 
 /*=============== SWIPER TESTIMONIAL ===============*/
