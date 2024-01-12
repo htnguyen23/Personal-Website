@@ -1,4 +1,5 @@
 /*=============== CHANGE BACKGROUND HEADER ===============*/
+
 function scrollHeader(){
     const header = document.getElementById('header')
 
@@ -11,8 +12,32 @@ function scrollHeader(){
     window.addEventListener('scroll', scrollHeader)
 }
 
+
 /*=============== SERVICES MODAL ===============*/
 
+const modalViews = document.querySelectorAll('.work_modal'),
+      modalBtns = document.querySelectorAll('.work_button'),
+      modalClose = document.querySelectorAll('.work_modal-close')
+
+let modal = function(modalClick){
+    modalViews[modalClick].classList.add('active-modal')
+}
+
+/*var of modal to open*/
+modalBtns.forEach((mb, i) => {
+    mb.addEventListener('click', () => {
+        modal(i)
+    })
+})
+
+/*var of modal to close*/
+modalClose.forEach((mc) => {
+    mc.addEventListener('click', () => {
+        modalViews.forEach((mv) => {
+            mv.classList.remove('active-modal')
+        })
+    })
+})
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 

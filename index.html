@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -16,13 +17,17 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets\css\styles.css">
 
-        <title> Responsive portfolio website Ansel </title>
+        <title> Portfolio website Huong </title>
     </head>
+
+
     <body>
+
         <!--=============== HEADER ===============-->
+        <!--TODO: decide on sections and change nav icon links to corresponding sections-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav_logo">Huong</a>
+                <a href="#" class="nav_logo">Huong Nguyen</a>
                 <div class="nav_menu">
                     <ul class="nav_list">
                         <li class="nav_item">
@@ -59,8 +64,10 @@
             </nav>
         </header>
 
+
         <!--=============== MAIN ===============-->
         <main class="main">
+
 
             <!--=============== HOME ===============-->
 
@@ -97,6 +104,7 @@
                     </a>
                 </div>
             </section>
+
             
             <!--=============== ABOUT ===============-->
             
@@ -115,12 +123,12 @@
                                 <span class="about_subtitle">[awards, honors, etc.]</span>
                             </div>
                             <div class="about_box">
-                                <i class='bx bx-briefcase-alt' ></i>
+                                <i class='bx bx-briefcase-alt about_icon' ></i>
                                 <h3 class="about_title">Experience</h3>
                                 <span class="about_subtitle">[# years working, jobs, etc.]</span>
                             </div>
                             <div class="about_box">
-                                <i class='bx bx-group' ></i>
+                                <i class='bx bx-group about_icon' ></i>
                                 <h3 class="about_title">Involvement</h3>
                                 <span class="about_subtitle">[organizations, volunteer, etc.]</span>
                             </div>
@@ -142,12 +150,13 @@
 
             </section>
 
+
             <!--=============== SKILLS ===============-->
 
             <!--TODO: decide how and what to present for skills/abilities/experience/positions-->
             <section class="skills section" id="skills">
                 <span class="section_subtitle">My abilities</span>
-                <h2 class="section_title">My Experience</h2>
+                <h2 class="section_title">Skills</h2>
 
                 <div class="skills_container container grid">
                     
@@ -216,11 +225,253 @@
                 </div>
             </section>
 
-            <!--=============== SERVICES ===============-->
 
-            <section class="services section">
-                
+            <!--TODO: change SERVICES section to EXPERIENCE & INVOLVEMENT?-->
+            <!--=============== EXPERIENCE ===============-->
+
+            <section class="experience section">
+                <span class="section_subtitle">My work</span>
+                <h2 class="section_title">Experience and Involvement</h2> 
+
+                <div class="work_container container grid">
+                    <div class="work_card">
+                        <h3 class="work_title">Software <br> Engineering <br> Intern</h3>
+                        <span class="work_button">See more
+                            <i class='bx bx-right-arrow-alt work_icon'></i>
+                        </span>
+                        <!--TODO: edit what to include/how to present work information-->
+                        <div class="work_modal">
+                            <div class="work_modal-content">
+                                <i class='bx bx-x work_modal-close'></i>
+                                <h3 class="work_modal-title">Software Engineering Intern</h3>
+                                <p class="work_modal-description">
+                                    job description... <br>
+                                    accomplishments...
+                                </p>
+                                <ul class="work_modal-list">
+                                    <p class="work_modal-description">Tasks included:</p>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 1...
+                                        </p>
+                                    </li>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 2...
+                                        </p>
+                                    </li>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 3...
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work_card">
+                        <h3 class="work_title">Web <br> Developer</h3>
+                        <span class="work_button">See more
+                            <i class='bx bx-right-arrow-alt work_icon' ></i>
+                        </span>
+
+                        <div class="work_modal">
+                            <div class="work_modal-content">
+                                <i class='bx bx-x work_modal-close'></i>
+                                <h3 class="work_modal-title">Web Developer</h3>
+                                <p class="work_modal-description">
+                                    job description... <br>
+                                    accomplishments...
+                                </p>
+                                <ul class="work_modal-list">
+                                    <p class="work_modal-description">Tasks included:</p>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 1...
+                                        </p>
+                                    </li>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 2...
+                                        </p>
+                                    </li>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 3...
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work_card">
+                        <h3 class="work_title">Help Desk <br> Agent</h3>
+                        <span class="work_button">See more
+                            <i class='bx bx-right-arrow-alt work_icon' ></i>
+                        </span>
+
+                        <div class="work_modal">
+                            <div class="work_modal-content">
+                                <i class='bx bx-x work_modal-close'></i>
+                                <h3 class="work_modal-title">Help Desk Agent</h3>
+                                <p class="work_modal-description">
+                                    job description... <br>
+                                    accomplishments...
+                                </p>
+                                <ul class="work_modal-list">
+                                    <p class="work_modal-description">Tasks included:</p>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 1...
+                                        </p>
+                                    </li>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 2...
+                                        </p>
+                                    </li>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 3...
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work_card">
+                        <h3 class="work_title">Project <br> Management <br> Intern</h3>
+                        <span class="work_button">See more
+                            <i class='bx bx-right-arrow-alt work_icon' ></i>
+                        </span>
+
+                        <div class="work_modal">
+                            <div class="work_modal-content">
+                                <i class='bx bx-x work_modal-close'></i>
+                                <h3 class="work_modal-title">Project Management Intern</h3>
+                                <p class="work_modal-description">
+                                    job description... <br>
+                                    accomplishments...
+                                </p>
+                                <ul class="work_modal-list">
+                                    <p class="work_modal-description">Tasks included:</p>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 1...
+                                        </p>
+                                    </li>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 2...
+                                        </p>
+                                    </li>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 3...
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work_card">
+                        <h3 class="work_title">Computer <br> Science <br> Instructor</h3>
+                        <span class="work_button">See more
+                            <i class='bx bx-right-arrow-alt work_icon' ></i>
+                        </span>
+
+                        <div class="work_modal">
+                            <div class="work_modal-content">
+                                <i class='bx bx-x work_modal-close'></i>
+                                <h3 class="work_modal-title">Computer Science Instructor</h3>
+                                <p class="work_modal-description">
+                                    job description... <br>
+                                    accomplishments...
+                                </p>
+                                <ul class="work_modal-list">
+                                    <p class="work_modal-description">Tasks included:</p>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 1...
+                                        </p>
+                                    </li>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 2...
+                                        </p>
+                                    </li>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 3...
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work_card">
+                        <h3 class="work_title">Camp <br> Counselor, <br> Coordinator</h3>
+                        <span class="work_button">See more
+                            <i class='bx bx-right-arrow-alt work_icon' ></i>
+                        </span>
+
+                        <div class="work_modal">
+                            <div class="work_modal-content">
+                                <i class='bx bx-x work_modal-close'></i>
+                                <i class='bx bx-x work_modal-close'></i>
+                                <h3 class="work_modal-title">Camp Counselor, Coordinator</h3>
+                                <p class="work_modal-description">
+                                    job description... <br>
+                                    accomplishments...
+                                </p>
+                                <ul class="work_modal-list">
+                                    <p class="work_modal-description">Tasks included:</p>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 1...
+                                        </p>
+                                    </li>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 2...
+                                        </p>
+                                    </li>
+                                    <li class="work_modal-item">
+                                        <i class='bx bx-check work_modal-icon'></i>
+                                        <p class="work_modal-info">
+                                            task 3...
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </section>
+
 
             <!--=============== WORK ===============-->
 
@@ -228,11 +479,13 @@
                 
             </section>
 
+
             <!--=============== TESTIMONIALS ===============-->
 
             <section class="testimonial section">
                 
             </section>
+
 
             <!--=============== CONTACT ===============-->
 
@@ -241,23 +494,28 @@
             </section>
         </main>
 
+
         <!--=============== FOOTER ===============-->
 
         <footer class="footer">
             
         </footer>
 
+
         <!--=============== SCROLLREVEAL ===============-->
 
         <script src=""></script>
+
 
         <!--=============== SWIPER JS ===============-->
 
         <script src=""></script>
 
+
         <!--=============== MIXITUP FILTER ===============-->
 
         <script src=""></script>
+
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
