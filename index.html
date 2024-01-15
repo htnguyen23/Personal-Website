@@ -16,6 +16,8 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets\css\styles.css">
+        <link rel="stylesheet" href="assets\css\projects.css">
+        <link rel="stylesheet" href="assets\css\work.css">
 
         <title> Portfolio website Huong </title>
     </head>
@@ -46,7 +48,7 @@
                             </a>
                         </li>
                         <li class="nav_item">
-                            <a href="#experience" class="nav_link">
+                            <a href="#work" class="nav_link">
                                 <i class='bx bx-briefcase'></i>
                             </a>
                         </li>
@@ -250,7 +252,7 @@
             <!--TODO: change SERVICES section to EXPERIENCE & INVOLVEMENT?-->
             <!--=============== EXPERIENCE ===============-->
 
-            <section class="experience section" id="experience">
+            <section class="experience section" id="work">
                 <span class="section_subtitle">My work</span>
                 <h2 class="section_title">Experience and Involvement</h2> 
 
@@ -561,7 +563,6 @@
                         <div class="work_modal">
                             <div class="work_modal-content">
                                 <i class='bx bx-x work_modal-close'></i>
-                                <i class='bx bx-x work_modal-close'></i>
                                 <h3 class="work_modal-title">Undergraduate Research Assistant</h3>
                                 <p class="work_modal-description">
                                     National Magnetic Resonance Facility At Madison (NMRFAM) | Madison, WI | Feb - May 19 <br>
@@ -602,7 +603,7 @@
 
             <section class="projects section" id="projects">
                 <span class="section_subtitle">My portfolio</span>
-                <h2 class="section_title">My Works</h2>
+                <h2 class="section_title">My Projects</h2>
 
                 <!--<div class=project_filters> </div>-->
                 <!--TODO: present projects-->
@@ -610,9 +611,36 @@
                     <div class="project_card">
                         <img class="project_img" src="assets/img/SplitWise_Project_Pic2.png" alt="Project picture">
                         <h3 class="project_title">SplitWise App</h3>
-                        <a class="project_button" href="#"> Demo
+                        <span class="project_button"> Demo
                             <i class='bx bx-right-arrow-alt project_icon' ></i>
-                        </a>
+                        </span>
+
+                        <div class="project_modal">
+                            <div class="project_modal-content">
+                                <i class='bx bx-x project_modal-close'></i>
+                                <h3 class="project_modal-title">SplitWise App</h3>
+                                <p class="project_modal-description">
+                                    A personal project  <br><br>
+                                    An app to split expenses between a group of people, for an easier way to pay people back and see what you're owed.
+                                </p>
+                                <ul class="project_modal-list">
+                                    <li class="project_modal-item">
+                                        <i class='bx bx-check project_modal-icon'></i>
+                                        <p class="project_modal-info">
+                                            GitHub repo: https://github.com/htnguyen23/learning-react2
+                                        </p>
+                                    </li>
+                                    <li class="project_modal-item">
+                                        <i class='bx bx-check project_modal-icon'></i>
+                                        <p class="project_modal-info"> 
+                                            other info: ... </p>
+                                    </li>
+                                </ul>
+                                <div class="project_modal-img-container">
+                                    <img class="project_modal-img" src="assets/img/SplitWise_Project_Pic1.png">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -711,10 +739,10 @@
                         <a href="#about" class="footer_link">About</a>
                     </li>
                     <li>
-                        <a href="#experience" class="footer_link">Experience</a>
+                        <a href="#work" class="footer_link">Experience</a>
                     </li>
                     <li>
-                        <a href="#work" class="footer_link">Projects</a>
+                        <a href="#projects" class="footer_link">Projects</a>
                     </li>
                 </ul>
 

@@ -87,8 +87,35 @@ modalClose.forEach((mc) => {
     })
 })
 
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
+/*=============== PROJECTS MODAL ===============*/
+
+const modalProjViews = document.querySelectorAll('.project_modal'),
+      modalProjBtns = document.querySelectorAll('.project_button'),
+      modalProjClose = document.querySelectorAll('.project_modal-close')
+
+let modalProj = function(modalClick){
+    modalProjViews[modalClick].classList.add('project_active-modal')
+}
+
+/*var of modal to open*/
+modalProjBtns.forEach((mb, i) => {
+    mb.addEventListener('click', () => {
+        modalProj(i)
+    })
+})
+
+/*var of modal to close*/
+modalProjClose.forEach((mc) => {
+    mc.addEventListener('click', () => {
+        modalProjViews.forEach((mv) => {
+            mv.classList.remove('project_active-modal')
+        })
+    })
+})
+
+
+/*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
 /* Link active work */ 
 const linkProject = document.querySelectorAll('.project_item')
