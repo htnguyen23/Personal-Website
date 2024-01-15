@@ -87,8 +87,35 @@ modalClose.forEach((mc) => {
     })
 })
 
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
+/*=============== PROJECTS MODAL ===============*/
+
+const modalProjViews = document.querySelectorAll('.project_modal'),
+      modalProjBtns = document.querySelectorAll('.project_button'),
+      modalProjClose = document.querySelectorAll('.project_modal-close')
+
+let modalProj = function(modalClick){
+    modalProjViews[modalClick].classList.add('project_active-modal')
+}
+
+/*var of modal to open*/
+modalProjBtns.forEach((mb, i) => {
+    mb.addEventListener('click', () => {
+        modalProj(i)
+    })
+})
+
+/*var of modal to close*/
+modalProjClose.forEach((mc) => {
+    mc.addEventListener('click', () => {
+        modalProjViews.forEach((mv) => {
+            mv.classList.remove('project_active-modal')
+        })
+    })
+})
+
+
+/*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
 /* Link active work */ 
 const linkProject = document.querySelectorAll('.project_item')
@@ -108,6 +135,35 @@ linkProject.forEach(l => l.addEventListener('click', activeProject))
 
 
 /*=============== LIGHT DARK THEME ===============*/ 
+
+const themeButton = document.getElementById('theme-button')
+const lightTheme = 'light-theme'
+const iconTheme = 'bx-sun'
+
+// previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// we obtain the current theme that the interface has by validating the light-theme class
+const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
+
+// we validate if the user previously chose a topic
+if (selectedTheme) {
+    // if the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the light
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
+    themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+}
+
+// activate/deactivate the theme manually w button
+themeButton.addEventListener('click', () => {
+    // add or remove the light/icon theme
+    document.body.classList.toggle(lightTheme)
+    themeButton.classList.toggle(iconTheme)
+    // save the theme and the current icon user chose
+    localStorage.setItem('selected-theme', getCurrentTheme());
+    localStorage.setItem('selected-icon', getCurrentIcon());
+})
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/

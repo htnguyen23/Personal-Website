@@ -13,13 +13,17 @@
         Blue: hsl(207, 90%, 72%)
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
+
+        Light Blue: hsl(216, 100%, 88.8%, 219)
+        Caramel: hsl(36, 100%, 77.8%)
+        Vivid Tangerine: hsl(14, 100, 76.1)
   */
 
   /* --<>: <>; dfines custom property names , var(--<>) is then used to reference the values of the custom properties*/
-  --first-hue: 250;
-  --sat: 66%;
-  --lig: 75%;
-  --second-hue: 219;
+  --first-hue: 14;
+  --sat: 100%;
+  --lig: 76.1%;
+  --second-hue: 194;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
@@ -113,10 +117,23 @@ img {
 }
 
 /*=============== THEME ===============*/
+.change-theme{
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: .3s;
+}
 
+.change-theme:hover{
+  color: var(--first-color);
+}
 
 /*========== Variables Dark theme ==========*/
-
+body.light-theme{
+  --title-color: hsl(var(--second-hue), 15%, 15%);
+  --text-color: hsl(var(--second-hue), 8%, 35%);
+  --body-color: hsl(var(--second-hue), 100%, 99%);
+  --container-color: #fff;
+}
 
 /*========== 
     Color changes in some parts of 
@@ -400,7 +417,7 @@ img {
 
 .carousel-slide{
   display: none;
-  height: 414px; 
+  height: 500px; 
   justify-content: center;
   margin: 10px;
 }
@@ -450,6 +467,8 @@ img {
 
 .about_subtitle{
   font-size: var(--tiny-font-size);
+  display: block;
+  margin-bottom: 5px;
 }
 
 .about_description{
@@ -513,168 +532,6 @@ img {
 
 
 /*=============== WORK ===============*/
-.work_container{
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  padding-top: 1rem;
-}
-.work_card{
-  background-color: var(--container-color);
-  padding: 3rem 1.5rem 1.5rem;
-  border-radius: 1rem;
-}
-
-.work_title{
-  font-size: var(--h3-font-size);
-  margin-bottom: 2.5rem;
-}
-
-.work_button{
-  color: var(--first-color);
-  font-size: var(--small-font-size);
-  display: flex;
-  align-items: center;
-  column-gap: .25rem;
-  cursor: pointer;
-}
-
-.work_button:hover,
-.work_icon{
-  transform: translateX(.25rem);
-}
-
-.work_icon{
-  font-size: 1rem;
-  transition: .4s;
-}
-
-/* Work modal */
-
-.work_modal{
-  position: fixed;
-  inset: 0;
-  background-color: hsla(var(--second-hue), 28%, 16%, .7);
-  padding: 2rem 1rem;
-  display: grid;
-  place-items: center;
-  visibility: hidden; 
-  opacity: 1; 
-  transition: .4s;
-  z-index: var(--z-modal);
-}
-
-.work_modal-content{
-  position: relative;
-  background-color: var(--body-color);
-  padding: 4.5rem 1.5rem 2.5rem;
-  border-radius: 1.5rem;
-}
-
-.work_modal-title,
-.work_modal-description{
-  text-align: center;
-}
-
-.work_modal-title{
-  font-size: var(--h3-font-size);
-  color: var(--first-color);
-  margin-bottom: 1rem;
-}
-
-.work_modal-description{
-  font-size: var(--small-font-size);
-  margin-bottom: 2rem;
-}
-
-.work_modal-list{
-  display: grid;
-  row-gap: .75rem;
-}
-
-.work_modal-item{
-  display: relative;
-  align-items: flex-start;
-  column-gap: .5rem 
-}
-
-.work_modal-icon{
-  font-size: 1.5rem;
-  color: var(--first-color);
-}
-
-.work_modal-info{
-  font-size: var(--small-font-size);
-}
-
-.work_modal-close{
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  font-size: 1.5rem;
-  color: var(--first-color);
-  cursor: pointer;
-}
-
-/* Active modal */
-.active-modal{
-  opacity: 1;
-  visibility: visible;
-}
-
-
-/*=============== PROJECTS ===============*/
-.project_container{
-  padding-top: 1rem;
-}
-
-/*.project_filters{*/
-
-.project_item{
-  cursor: pointer;
-  color: var(--title-color);
-  padding: .25rem .75rem;
-  font-weight: var(--font-medium);
-  border-radius: .5rem;
-}
-
-.project_card{
-  background-color: var(--container-color);
-  padding: 1rem;
-  border-radius: 1rem;
-}
-
-.project_img{
-  border-radius: 1rem;
-  margin-bottom: .75rem;
-}
-
-.project_title{
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-meidum);
-  margin-bottom: .25rem;
-}
-
-.project_button{
-  width: max-content;
-  color: var(--first-color);
-  font-size: var(--small-font-size);
-  display: flex;
-  align-items: center;
-  column-gap: .24rem;
-}
-
-.project_button:hover,
-.project_icon{
-  transform: translateX(.25rem);
-}
-
-.project_icon{
-  font-size: 1rem;
-  transition: .4s;
-}
-
-/* Active item project*/
-/*.active_project{ */
 
 
 /*=============== TESTIMONIAL ===============*/

@@ -1,0 +1,151 @@
+/*=============== PROJECTS ===============*/
+.project_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+/*.project_filters{*/
+
+.project_item {
+    cursor: pointer;
+    color: var(--title-color);
+    padding: .25rem .75rem;
+    font-weight: var(--font-medium);
+    border-radius: .5rem;
+}
+
+.project_card {
+    background-color: var(--container-color);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.project_img {
+    border-radius: 1rem;
+    margin-bottom: .75rem;
+}
+
+.project_title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-meidum);
+    margin-bottom: .25rem;
+}
+
+.project_button {
+    width: max-content;
+    color: var(--first-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: .24rem;
+}
+
+.project_button:hover,
+.project_icon {
+    transform: translateX(.25rem);
+}
+
+.project_icon {
+    font-size: 1rem;
+    transition: .4s;
+}
+
+/*.project_modal{*/
+
+.project_modal {
+    position: fixed;
+    inset: 0;
+    background-color: hsla(var(--second-hue), 28%, 16%, .7);
+    padding: 2rem 1rem;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    opacity: 1;
+    transition: .4s;
+    z-index: var(--z-modal);
+}
+
+.project_modal-content {
+    position: relative;
+    background-color: var(--body-color);
+    padding: 4.5rem 1.5rem 2.5rem;
+    border-radius: 1.5rem;
+    max-width: 650px;
+    max-height: 850px;
+    height: 800px;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+}
+
+.project_modal-title,
+.project_modal-description {
+    text-align: center;
+}
+
+.project_modal-title {
+    font-size: var(--h3-font-size);
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.project_modal-description {
+    font-size: var(--small-font-size);
+    margin-bottom: 2rem;
+}
+
+.project_modal-list {
+    display: grid;
+    row-gap: .75rem;
+}
+
+.project_modal-item {
+    display: relative;
+    align-items: flex-start;
+    column-gap: .5rem;
+}
+
+.project_modal-icon {
+    font-size: 1.5rem;
+    color: var(--first-color);
+}
+
+.project_modal-info {
+    font-size: var(--small-font-size);
+    color: inherit;
+}
+
+.project_modal-img-container {
+    display: flex;
+    object-fit: contain;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.project_modal-img {
+    border-radius: 1.5rem;
+    margin-bottom: .5rem;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 10px;
+}
+
+.project_modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    cursor: pointer;
+}
+
+/* Active modal */
+.project_active-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Active item project*/
+/*.active_project{ */
