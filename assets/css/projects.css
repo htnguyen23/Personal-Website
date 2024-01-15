@@ -1,5 +1,7 @@
 /*=============== PROJECTS ===============*/
 .project_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
     padding-top: 1rem;
 }
 
@@ -70,8 +72,8 @@
     padding: 4.5rem 1.5rem 2.5rem;
     border-radius: 1.5rem;
     max-width: 650px;
-    max-height: 750px;
-    height: 600px;
+    max-height: 850px;
+    height: 800px;
     object-fit: contain;
     display: flex;
     flex-direction: column;
@@ -111,6 +113,7 @@
 
 .project_modal-info {
     font-size: var(--small-font-size);
+    color: inherit;
 }
 
 .project_modal-img-container {

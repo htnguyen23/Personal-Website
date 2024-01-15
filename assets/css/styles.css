@@ -417,7 +417,7 @@ body.light-theme{
 
 .carousel-slide{
   display: none;
-  height: 414px; 
+  height: 500px; 
   justify-content: center;
   margin: 10px;
 }
@@ -467,6 +467,8 @@ body.light-theme{
 
 .about_subtitle{
   font-size: var(--tiny-font-size);
+  display: block;
+  margin-bottom: 5px;
 }
 
 .about_description{
