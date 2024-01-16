@@ -472,7 +472,9 @@ body.light-theme {
 }
 
 .about_description{
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  text-indent: 30px;
 }
 
 
