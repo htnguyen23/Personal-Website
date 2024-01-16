@@ -143,8 +143,8 @@ body.light-theme{
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 10%;
+  margin-right: 10%;
   position: center;
 }
 
@@ -319,7 +319,7 @@ body.light-theme{
 .home_social{
   bottom: 5rem;
   left: 0;
-  display: gred;
+  display: grid;
   row-gap: .5rem;
 }
 
