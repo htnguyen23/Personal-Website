@@ -121,6 +121,7 @@
     object-fit: contain;
     overflow: hidden;
     justify-content: center;
+    padding-top: 15px;
 }
 
 .project_modal-img {
